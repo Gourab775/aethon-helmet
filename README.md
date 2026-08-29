@@ -1,6 +1,6 @@
 # Interactive 3D Helmet Showcase
 
-Live Demo: https://gourab775.github.io/interactive-3d-helmet
+Live Demo: https://interactive-3d-helmet.vercel.app
 
 Category: 3D Visualization / Interactive Product Experience
 
@@ -102,7 +102,7 @@ Configured via `vercel.json` with security headers (`X-Content-Type-Options`, `X
 ### GitHub Pages
 
 1. Enable Pages: Settings → Pages → Source `master` / `main` → `/ (root)`
-2. Access at `https://gourab775.github.io/interactive-3d-helmet`
+2. Access at `https://interactive-3d-helmet.vercel.app`
 
 ### Custom Static Host
 
@@ -112,7 +112,7 @@ Upload `index.html` and `vercel.json` (headers) to any static host (Netlify, Clo
 
 - **Model** — Replace the glTF URL in `GLTFLoader.load()` with your asset; adjust `helmet.scale` and initial section positions in the `sections` array.
 - **Materials & Lighting** — Tune `toneMappingExposure`, `dirLight` intensities/colors, and HDR URLs (`HDRI_LIGHT` / `HDRI_DARK`) to match brand palette.
-- **Narrative Sections** — Edit `sections` (scrollStart/End, posX/Y, rotX/Y/Z, camZ, scale) and corresponding HTML `.info-section` blocks to reorder the story flow.
+- **Narrative Sections** — Edit `sections` (scrollStart/End, posX/Y, rotX/Y, rotX/Y/Z, camZ, scale) and corresponding HTML `.info-section` blocks to reorder the story flow.
 - **Theming** — Modify `:root` CSS variables (`--bg`, `--text`, `--accent`, `--light`) and `BG_LIGHT` / `BG_DARK` in script for full palette control.
 - **Typography** — Swap Google Fonts imports and update `font-family` in `body` and `h1/h2` styles.
 
