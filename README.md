@@ -1,6 +1,6 @@
 # Interactive 3D Helmet Showcase
 
-Live Demo: https://interactive-3d-helmet.vercel.app
+Live Demo: https://aethon-helmet.vercel.app
 
 Category: 3D Visualization / Interactive Product Experience
 
@@ -102,7 +102,7 @@ Configured via `vercel.json` with security headers (`X-Content-Type-Options`, `X
 ### GitHub Pages
 
 1. Enable Pages: Settings → Pages → Source `master` / `main` → `/ (root)`
-2. Access at `https://interactive-3d-helmet.vercel.app`
+2. Access at `https://aethon-helmet.vercel.app`
 
 ### Custom Static Host
 
