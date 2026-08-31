@@ -1,10 +1,10 @@
-# Interactive 3D Helmet Showcase
+﻿# Interactive 3D Helmet Showcase
 
-Live Demo: https://interactive-3d-helmet.vercel.app
+Live Demo: https://aethon-helmet.vercel.app
 
 Category: 3D Visualization / Interactive Product Experience
 
-Stack: Three.js · WebGL · JavaScript (ES Modules) · HTML5 · CSS3
+Stack: Three.js Â· WebGL Â· JavaScript (ES Modules) Â· HTML5 Â· CSS3
 
 ## Overview
 
@@ -12,11 +12,11 @@ Interactive 3D Helmet Showcase is a high-performance, scroll-driven product pres
 
 ## Features
 
-- **Scroll-Synced 3D Choreography** — Camera position, model rotation, and scale interpolate smoothly through six curated narrative sections using lerped scroll progress and smoothstep easing.
-- **Photorealistic Rendering Pipeline** — ACESFilmic tone mapping, HDR environment maps (light/dark), three-point directional lighting, and high-DPI support for crisp visuals on all devices.
-- **Interactive Orbit Controls** — Pointer-drag orbit with decay-based return-to-narrative, click-and-drag cursor feedback, and mobile-responsive fallback.
-- **Adaptive Theme System** — Light/dark mode with dynamic HDR swapping, exposure adjustment, and CSS variable-driven theming across all UI layers.
-- **Performance-First Delivery** — CDN-hosted Three.js (r163) via import maps, immutable caching headers, and intersection-observer fade-in animations for optimal load and scroll performance.
+- **Scroll-Synced 3D Choreography** â€” Camera position, model rotation, and scale interpolate smoothly through six curated narrative sections using lerped scroll progress and smoothstep easing.
+- **Photorealistic Rendering Pipeline** â€” ACESFilmic tone mapping, HDR environment maps (light/dark), three-point directional lighting, and high-DPI support for crisp visuals on all devices.
+- **Interactive Orbit Controls** â€” Pointer-drag orbit with decay-based return-to-narrative, click-and-drag cursor feedback, and mobile-responsive fallback.
+- **Adaptive Theme System** â€” Light/dark mode with dynamic HDR swapping, exposure adjustment, and CSS variable-driven theming across all UI layers.
+- **Performance-First Delivery** â€” CDN-hosted Three.js (r163) via import maps, immutable caching headers, and intersection-observer fade-in animations for optimal load and scroll performance.
 
 ## Tech Stack
 
@@ -33,14 +33,14 @@ Interactive 3D Helmet Showcase is a high-performance, scroll-driven product pres
 
 ```
 interactive-3d-helmet/
-├── index.html          # Single-page application: layout, styles, and 3D logic
-├── vercel.json         # Deployment config (security headers, caching)
-├── services/           # Extensibility layer for platform services (optional)
-│   └── config/         # Environment and service bindings
-└── README.md
+â”œâ”€â”€ index.html          # Single-page application: layout, styles, and 3D logic
+â”œâ”€â”€ vercel.json         # Deployment config (security headers, caching)
+â”œâ”€â”€ services/           # Extensibility layer for platform services (optional)
+â”‚   â””â”€â”€ config/         # Environment and service bindings
+â””â”€â”€ README.md
 ```
 
-> `services/` is reserved for future service integrations. Environment variables follow the `SERVICE_*` convention — `SERVICE_* (alias for AI_GATEWAY_* for backward compat)` where applicable.
+> `services/` is reserved for future service integrations. Environment variables follow the `SERVICE_*` convention â€” `SERVICE_* (alias for AI_GATEWAY_* for backward compat)` where applicable.
 
 ## Getting Started
 
@@ -91,18 +91,18 @@ Open `http://localhost:3000` or the served `index.html`.
 npm run build
 ```
 
-For this static project, the build step is optional — `index.html` is production-ready and deploys directly via Vercel or GitHub Pages.
+For this static project, the build step is optional â€” `index.html` is production-ready and deploys directly via Vercel or GitHub Pages.
 
 ## Deployment
 
 ### Vercel (Recommended)
 
-Configured via `vercel.json` with security headers (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) and immutable JS caching. Connect the repository and deploy — no build command required.
+Configured via `vercel.json` with security headers (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) and immutable JS caching. Connect the repository and deploy â€” no build command required.
 
 ### GitHub Pages
 
-1. Enable Pages: Settings → Pages → Source `master` / `main` → `/ (root)`
-2. Access at `https://interactive-3d-helmet.vercel.app`
+1. Enable Pages: Settings â†’ Pages â†’ Source `master` / `main` â†’ `/ (root)`
+2. Access at `https://aethon-helmet.vercel.app`
 
 ### Custom Static Host
 
@@ -110,12 +110,13 @@ Upload `index.html` and `vercel.json` (headers) to any static host (Netlify, Clo
 
 ## Customization
 
-- **Model** — Replace the glTF URL in `GLTFLoader.load()` with your asset; adjust `helmet.scale` and initial section positions in the `sections` array.
-- **Materials & Lighting** — Tune `toneMappingExposure`, `dirLight` intensities/colors, and HDR URLs (`HDRI_LIGHT` / `HDRI_DARK`) to match brand palette.
-- **Narrative Sections** — Edit `sections` (scrollStart/End, posX/Y, rotX/Y/Z, camZ, scale) and corresponding HTML `.info-section` blocks to reorder the story flow.
-- **Theming** — Modify `:root` CSS variables (`--bg`, `--text`, `--accent`, `--light`) and `BG_LIGHT` / `BG_DARK` in script for full palette control.
-- **Typography** — Swap Google Fonts imports and update `font-family` in `body` and `h1/h2` styles.
+- **Model** â€” Replace the glTF URL in `GLTFLoader.load()` with your asset; adjust `helmet.scale` and initial section positions in the `sections` array.
+- **Materials & Lighting** â€” Tune `toneMappingExposure`, `dirLight` intensities/colors, and HDR URLs (`HDRI_LIGHT` / `HDRI_DARK`) to match brand palette.
+- **Narrative Sections** â€” Edit `sections` (scrollStart/End, posX/Y, rotX/Y/Z, camZ, scale) and corresponding HTML `.info-section` blocks to reorder the story flow.
+- **Theming** â€” Modify `:root` CSS variables (`--bg`, `--text`, `--accent`, `--light`) and `BG_LIGHT` / `BG_DARK` in script for full palette control.
+- **Typography** â€” Swap Google Fonts imports and update `font-family` in `body` and `h1/h2` styles.
 
 ## License
 
 MIT
+
