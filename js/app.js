@@ -137,7 +137,7 @@
     window.addEventListener('scroll', () => {
       const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
       targetScrollProgress = scrollHeight > 0 ? window.scrollY / scrollHeight : 0;
-    });
+    }, { passive: true });
 
     // Fade-in observer
     const fadeEls = document.querySelectorAll('.fade-in');
@@ -155,13 +155,14 @@
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
-    });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    }, { passive: true });
 
-    // Animate
+    // Animate - smooth lerp for buttery scroll
     function animate() {
       requestAnimationFrame(animate);
 
-      scrollProgress += (targetScrollProgress - scrollProgress) * 0.06;
+      scrollProgress += (targetScrollProgress - scrollProgress) * 0.075;
 
       if (helmet) {
         let currentSection = sections[0];
